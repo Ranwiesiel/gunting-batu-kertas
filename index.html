@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Tebak-tebakan suit</title>
+    <style>
+      #container{
+        display: flex;
+        width: 75%;
+        box-sizing: border;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: auto;
+        flex-direction: row;
+      }
+      input{
+            background-color: orange;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            color: white;
+            padding: 20px 20px;
+            margin: 20px 20px;
+            cursor: pointer;
+      }
+    </style>
+</head>
+<body>
+    <div class="container" id="container">
+        <h1>Gunting, Batu, Kertas!</h1>
+        <input type="button" value="Start!" onclick="tebak()">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
