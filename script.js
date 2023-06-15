@@ -22,7 +22,7 @@ function tebak(){
   }
   
   function kalah(){
-    alert("Halah kalah, huuu!!!")
+    alert("Halah kalah, huuu!!! musuhnya " + random)
   }
   
   function gunting(){
