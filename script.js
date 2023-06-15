@@ -2,7 +2,8 @@ function tebak(){
   var cek= confirm("Siap main?");
   while (cek){
     alert("Siap-siap bang!");
-    var tebak= prompt("Gunting, batu, atau kertas?");
+    var rawTebak= prompt("Gunting, batu, atau kertas?");
+    var tebak= rawTebak.toLowerCase();
     var random= Math.random();
     if (random < 0.34){
       random="gunting";
@@ -28,7 +29,7 @@ function tebak(){
   function gunting(){
     if (tebak === random){
       alert("Sama-sama "+tebak);
-    } else if (tebak == "kertas"){
+    } else if (tebak == "batu"){
       alert("Anjayy menang!! musuhnya "+random);
     } else{
       kalah()
@@ -38,7 +39,7 @@ function tebak(){
   function kertas(){
     if (tebak === random){
       alert("Sama-sama "+tebak);
-    } else if (tebak == "batu"){
+    } else if (tebak == "gunting"){
       alert("Anjayy menang!! musuhnya "+random);
     } else{
       kalah()
@@ -48,7 +49,7 @@ function tebak(){
   function batu(){
     if (tebak === random){
       alert("Sama-sama "+tebak);
-    } else if (tebak == "gunting"){
+    } else if (tebak == "kertas"){
       alert("Anjayy menang!! musuhnya "+random);
     } else{
       kalah()
