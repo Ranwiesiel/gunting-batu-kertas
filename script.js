@@ -5,7 +5,7 @@ function tebak(){
     var rawTebak= prompt("Gunting, batu, atau kertas?");
     var tebak= rawTebak.toLowerCase();
     var random= Math.random();
-    if (tebak != ["gunting", "batu", "kertas"]){
+    if (!(tebak === "gunting") && !(tebak === "batu") && !(tebak === "kertas")){
       alert("yang bener lah bangg..");
       return true;
     }
